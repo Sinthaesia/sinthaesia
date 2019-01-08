@@ -1,0 +1,102 @@
+/* line 96, ../sass/screen.scss */
+#services {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 102, ../sass/screen.scss */
+#services > div {
+  border-radius: 10px;
+  padding: 1rem;
+  width: calc(400px - 30px);
+  height: calc(250px - 30px);
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+}
+/* line 114, ../sass/screen.scss */
+#services > div .content {
+  position: absolute;
+  top: 100px;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+}
+/* line 133, ../sass/screen.scss */
+#services > div .content h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+/* line 140, ../sass/screen.scss */
+#services > div:nth-child(odd) {
+  background: #a8dadc;
+}
+/* line 143, ../sass/screen.scss */
+#services > div:nth-child(even) {
+  background: #1d3557;
+}
+/* line 146, ../sass/screen.scss */
+#services > div:hover .icon .fas {
+  font-size: 40px;
+}
+/* line 149, ../sass/screen.scss */
+#services > div:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+/* line 156, ../sass/screen.scss */
+#services > div .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1faee;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  z-index: 1;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+/* line 170, ../sass/screen.scss */
+#services > div .icon .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+}
+/* line 181, ../sass/screen.scss */
+#services > div .icon .fas:nth-child(odd) {
+  color: #a8dadc;
+}
+/* line 184, ../sass/screen.scss */
+#services > div .icon .fas:nth-child(even) {
+  color: #1d3557;
+}

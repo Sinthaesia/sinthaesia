@@ -1,0 +1,49 @@
+@import "compass/css3";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
+
+footer{
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background: $spaceblue;
+  .sitemap{
+    width: 50%;
+    & > h2{
+      font-size: 2em;
+      color: $lightblue;
+    }
+    ul{
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      li{
+        list-style: none;
+        font-size: 1.5em;
+        padding: .5rem;
+        border-left: .25rem solid $queenblue;
+        a{
+          text-decoration: none;
+          color: $queenblue;
+          transition: all .3s ease-in-out;
+          &:hover{
+            color: $dew;
+            margin-left: 15px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .social-container{
+    width: 50%;
+    & > h2{
+      text-align: right;
+      font-size: 2em;
+      color: $lightblue;
+    }
+  }
+}

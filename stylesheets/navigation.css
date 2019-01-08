@@ -1,0 +1,163 @@
+/* HSL */
+/* RGB */
+/* HSL */
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 6, ../sass/navigation.scss */
+:root {
+  font-size: 16px !important;
+}
+
+/* line 10, ../sass/navigation.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/navigation.scss */
+nav {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(-45deg, #457b9d, #1d3557, #457b9d, #1d3557);
+  background-size: 400% 400%;
+  animation: gradient-transition 7s ease infinite;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  z-index: 100;
+}
+/* line 28, ../sass/navigation.scss */
+nav > ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+}
+/* line 37, ../sass/navigation.scss */
+nav > ul > li {
+  list-style: none;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 41, ../sass/navigation.scss */
+nav > ul > li:nth-last-child(1) {
+  border-right: none;
+}
+/* line 45, ../sass/navigation.scss */
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+}
+
+/* line 53, ../sass/navigation.scss */
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 60, ../sass/navigation.scss */
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #a8dadc;
+  font-size: 18px;
+  line-height: 20px;
+  transition: .5s;
+}
+
+/* line 68, ../sass/navigation.scss */
+ul li a .name span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e63946;
+}
+
+/* line 77, ../sass/navigation.scss */
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+
+/* line 80, ../sass/navigation.scss */
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: transparent;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+/* line 89, ../sass/navigation.scss */
+ul li a .icon .fas {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: .5s;
+  color: #a8dadc;
+}
+
+/* line 97, ../sass/navigation.scss */
+ul li a .icon .fas:nth-last-child(1) {
+  color: #e63946;
+}
+
+/* line 100, ../sass/navigation.scss */
+ul li a:hover .icon .fas {
+  transform: translateY(-100%);
+}
+
+/* line 104, ../sass/navigation.scss */
+.logo {
+  position: absolute;
+  left: 2rem;
+  color: #a8dadc;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+}
+/* line 114, ../sass/navigation.scss */
+.logo:hover {
+  color: #e63946;
+}
+/* line 117, ../sass/navigation.scss */
+.logo h1 {
+  font-size: 2rem;
+}

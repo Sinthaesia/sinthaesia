@@ -1,0 +1,79 @@
+/* HSL */
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 5, ../sass/footer.scss */
+footer {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background: #1d3557;
+}
+/* line 12, ../sass/footer.scss */
+footer .sitemap {
+  width: 50%;
+}
+/* line 14, ../sass/footer.scss */
+footer .sitemap > h2 {
+  font-size: 2em;
+  color: #a8dadc;
+}
+/* line 18, ../sass/footer.scss */
+footer .sitemap ul {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* line 23, ../sass/footer.scss */
+footer .sitemap ul li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: .5rem;
+  border-left: 0.25rem solid #457b9d;
+}
+/* line 28, ../sass/footer.scss */
+footer .sitemap ul li a {
+  text-decoration: none;
+  color: #457b9d;
+  transition: all .3s ease-in-out;
+}
+/* line 32, ../sass/footer.scss */
+footer .sitemap ul li a:hover {
+  color: #f1faee;
+  margin-left: 15px;
+  text-decoration: underline;
+}
+/* line 41, ../sass/footer.scss */
+footer .social-container {
+  width: 50%;
+}
+/* line 43, ../sass/footer.scss */
+footer .social-container > h2 {
+  text-align: right;
+  font-size: 2em;
+  color: #a8dadc;
+}

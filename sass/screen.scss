@@ -1,0 +1,300 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: $dew;
+  font-family: 'Poppins', sans-serif;
+}
+#image-container{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: $lightblue;
+  background-image: url('../images/background-landing-page.jpg');
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  color: $spaceblue;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align:justify;
+  & > h1{
+    font-size: 5rem;
+    color: $dew;
+  }
+  & > p{
+    font-size: 3.5rem;
+    color: $spaceblue;
+  }
+  .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: $dew;
+    border: 2px solid $dew;
+    border-radius: 19px;
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background: transparent;
+    -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+         -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+          -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+           -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+              transition: all .3s cubic-bezier(.42,.42,.75,.74);
+    &:hover{
+      background: $dew;
+      border: 2px solid $spaceblue;
+      color: $spaceblue;
+    }
+  }
+}
+
+#announcement{
+  font-size: 3.5rem;
+  padding: 1rem 2rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  &::after{
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  // margin: 0 auto; /* This will center the border. */
+  // width: 45%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: .4rem solid black; /* This creates the border. Replace black with whatever color you want. */
+  }
+  & > h1{
+    width: auto;
+  }
+}
+.video-background { /* class name used in javascript too */
+    width: 100%; /* width needs to be set to 100% */
+    height: 100%; /* height needs to be set to 100% */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#services{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 0;
+  & > div{
+    // border-radius: 10px;
+    padding: 1rem;
+    width: calc(400px - 30px);
+    height: calc(250px - 30px);
+    display: block;
+    position: relative;
+    -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+         -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+          -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+           -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+              transition: all .3s cubic-bezier(.42,.42,.75,.74);
+              &::before,
+              &::after{
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ff0000,#fb0094,#0000ff,#00ff00,#ff0000);
+                background-size: 400%;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                z-index: -1;
+                animation: lightshow 20s linear infinite;
+              }
+              &::after{
+                filter: blur(10px);
+              }
+    .content{
+      position: absolute;
+      top: 100px;
+      height: calc(100% - 100px);
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+      left: 0;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // flex-direction: column;
+      text-align: center;
+      -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+           -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+            -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+             -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+                transition: all .3s cubic-bezier(.42,.42,.75,.74);
+      h3{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+    &:nth-child(odd){
+      background: $lightblue;
+    }
+    &:nth-child(even){
+      background: $spaceblue;
+    }
+    &:hover .icon .fas{
+      font-size: 40px;
+    }
+    &:hover .icon{
+      top: 20px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $dew;
+      -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+           -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+            -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+             -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+                transition: all .3s cubic-bezier(.42,.42,.75,.74);
+      z-index: 1 !important;
+      // border: 2px solid rgba(0,0,0,.2);
+      .fas{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+             -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+              -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+               -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+                  transition: all .3s cubic-bezier(.42,.42,.75,.74);
+                  &:nth-child(odd){
+                    color: $lightblue;
+                  }
+                  &:nth-child(even){
+                    color: $spaceblue;
+                  }
+      }
+    }
+  }
+}
+#motivational-quote{
+  margin: 5vh 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(-45deg, $desire, $dew, $lightblue, $queenblue, $spaceblue);
+  background-size: 400% 400%;
+  animation: gradient-transition 7s ease infinite;
+  @include angle-edge(topleft, 3deg, bottomright, 3deg);
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 3rem;
+    font-weight: bold;
+    transform: rotate(3deg);
+    color: $lightblue;
+    &::before{
+      content: open-quote;
+      color: $desire;
+      margin-right: 5px;
+    }
+    &::after{
+      content: close-quote;
+      color: $desire;
+      margin-left: 5px;
+    }
+  }
+}
+#feedback{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  div{
+    width: 33%;
+    padding: 2rem;
+    &:nth-child(odd){
+      background: $desire;
+    }
+  }
+}
+
+.clickable {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+// section > div{
+//   position: relative;
+//   &:hover{
+//     font-size: 40px;
+//   }
+//   &:hover .icon{
+//     top: 20px;
+//     right: 40px;
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+//   }
+//   .icon{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: $dew;
+//     -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//          -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//           -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//            -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//               transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//     z-index: 1;
+//     .fas{
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       font-size: 80px;
+//       -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//            -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//             -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//              -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//                 transition: all .3s cubic-bezier(.42,.42,.75,.74);
+//
+//     }
+//   }
+// }
