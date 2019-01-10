@@ -48,7 +48,7 @@ footer .sitemap > h2 {
 }
 /* line 22, ../sass/footer.scss */
 footer .sitemap ul {
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
