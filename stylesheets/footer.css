@@ -151,3 +151,70 @@ footer .social-container .social-icons .social-button i {
     left: -10%;
   }
 }
+/* responsive-ratio */
+@media only screen and (max-width: 1050px) {
+  /* line 119, ../sass/footer.scss */
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 123, ../sass/footer.scss */
+  footer .sitemap {
+    width: 100%;
+  }
+  /* line 125, ../sass/footer.scss */
+  footer .sitemap > h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  /* line 129, ../sass/footer.scss */
+  footer .sitemap ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 134, ../sass/footer.scss */
+  footer .sitemap ul li {
+    font-size: 1rem;
+    border: none;
+  }
+  /* line 137, ../sass/footer.scss */
+  footer .sitemap ul li:nth-child(1) {
+    margin: 0;
+  }
+  /* line 140, ../sass/footer.scss */
+  footer .sitemap ul li a {
+    color: #f1faee;
+  }
+  /* line 142, ../sass/footer.scss */
+  footer .sitemap ul li a:hover {
+    margin: 0;
+  }
+  /* line 149, ../sass/footer.scss */
+  footer .social-container {
+    width: 100%;
+  }
+  /* line 151, ../sass/footer.scss */
+  footer .social-container > h2 {
+    text-align: center;
+  }
+  /* line 154, ../sass/footer.scss */
+  footer .social-container .social-icons {
+    text-align: center;
+  }
+  /* line 156, ../sass/footer.scss */
+  footer .social-container .social-icons .social-button {
+    height: 60px;
+    width: 60px;
+  }
+  /* line 159, ../sass/footer.scss */
+  footer .social-container .social-icons .social-button i {
+    line-height: 60px;
+  }
+}
+/* line 170, ../sass/footer.scss */
+section#feedback div {
+  overflow: hidden;
+}

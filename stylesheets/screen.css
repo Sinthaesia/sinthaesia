@@ -43,7 +43,8 @@ body {
 /* line 20, ../sass/screen.scss */
 #image-container {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: 100vh;
+  min-height: auto;
   background: #a8dadc;
   background-image: url("../images/background-landing-page.jpg");
   background-size: cover;
@@ -52,26 +53,28 @@ body {
   background-repeat: no-repeat;
   position: relative;
   color: #1d3557;
+}
+/* line 32, ../sass/screen.scss */
+#image-container .darken-overlay {
   font-size: 17px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   text-align: justify;
 }
-/* line 38, ../sass/screen.scss */
-#image-container > h1 {
+/* line 39, ../sass/screen.scss */
+#image-container .darken-overlay > h1 {
   font-size: 5rem;
   color: #f1faee;
 }
-/* line 42, ../sass/screen.scss */
-#image-container > p {
+/* line 43, ../sass/screen.scss */
+#image-container .darken-overlay > p {
   font-size: 3.5rem;
-  color: #1d3557;
+  color: #457b9d;
 }
-/* line 46, ../sass/screen.scss */
-#image-container .button {
+/* line 47, ../sass/screen.scss */
+#image-container .darken-overlay .button {
   font-size: 18px;
   text-decoration: none;
   color: #f1faee;
@@ -87,22 +90,43 @@ body {
   -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
 }
-/* line 61, ../sass/screen.scss */
-#image-container .button:hover {
+/* line 62, ../sass/screen.scss */
+#image-container .darken-overlay .button:hover {
   background: #f1faee;
   border: 2px solid #1d3557;
   color: #1d3557;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
+.services_header {
+  text-align: center;
+  font-size: 3.5rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #457b9d;
+}
+/* line 76, ../sass/screen.scss */
+.services_header::after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 0.4rem solid #457b9d;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* line 85, ../sass/screen.scss */
 #announcement {
   font-size: 3.5rem;
   padding: 1rem 2rem;
   width: auto;
   display: inline-block;
   position: relative;
+  color: #1d3557;
 }
-/* line 75, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #announcement::after {
   content: "";
   /* This is necessary for the pseudo element to work. */
@@ -110,15 +134,15 @@ body {
   /* This will put the pseudo element on its own line. */
   padding-top: 20px;
   /* This creates some space between the element and the border. */
-  border-bottom: .4rem solid black;
+  border-bottom: 0.4rem solid #1d3557;
   /* This creates the border. Replace black with whatever color you want. */
 }
-/* line 83, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #announcement > h1 {
   width: auto;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .video-background {
   /* class name used in javascript too */
   width: 100%;
@@ -131,7 +155,7 @@ body {
   z-index: -1;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #services {
   width: 100%;
   height: 200px;
@@ -139,7 +163,7 @@ body {
   justify-content: space-around;
   margin: 3% 0;
 }
-/* line 102, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #services > div {
   padding: 1rem;
   width: calc(400px - 30px);
@@ -152,7 +176,7 @@ body {
   -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
 }
-/* line 114, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #services > div::before, #services > div::after {
   content: '';
   position: absolute;
@@ -165,11 +189,11 @@ body {
   z-index: -1;
   animation: lightshow 20s linear infinite;
 }
-/* line 128, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #services > div::after {
   filter: blur(10px);
 }
-/* line 131, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #services > div .content {
   position: absolute;
   top: 100px;
@@ -186,26 +210,26 @@ body {
   -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
 }
-/* line 150, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #services > div .content h3 {
   margin: 0;
   padding: 0;
   color: #fff;
   font-size: 24px;
 }
-/* line 157, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #services > div:nth-child(odd) {
   background: #a8dadc;
 }
-/* line 160, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #services > div:nth-child(even) {
   background: #1d3557;
 }
-/* line 163, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #services > div:hover .icon .fas {
   font-size: 40px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #services > div:hover .icon {
   top: 20px;
   left: calc(50% - 40px);
@@ -213,7 +237,7 @@ body {
   height: 80px;
   border-radius: 50%;
 }
-/* line 173, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 #services > div .icon {
   position: absolute;
   top: 0;
@@ -228,7 +252,7 @@ body {
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   z-index: 1 !important;
 }
-/* line 187, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #services > div .icon .fas {
   position: absolute;
   top: 50%;
@@ -241,16 +265,16 @@ body {
   -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
 }
-/* line 198, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #services > div .icon .fas:nth-child(odd) {
   color: #a8dadc;
 }
-/* line 201, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 #services > div .icon .fas:nth-child(even) {
   color: #1d3557;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #motivational-quote {
   margin: 5vh 0;
   width: 100%;
@@ -290,27 +314,27 @@ body {
   transform-origin: left bottom;
   transform: skewY(3deg);
 }
-/* line 221, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #motivational-quote p {
   font-size: 3rem;
   font-weight: bold;
   transform: rotate(3deg);
   color: #a8dadc;
 }
-/* line 226, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #motivational-quote p::before {
   content: open-quote;
   color: #e63946;
   margin-right: 5px;
 }
-/* line 231, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #motivational-quote p::after {
   content: close-quote;
   color: #e63946;
   margin-left: 5px;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #feedback {
   width: 100%;
   height: 300px;
@@ -318,17 +342,17 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 244, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #feedback div {
   width: 33%;
   padding: 2rem;
 }
-/* line 247, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #feedback div:nth-child(odd) {
   background: #e63946;
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .clickable {
   height: 100%;
   width: 100%;
@@ -336,4 +360,59 @@ body {
   top: 0;
   position: absolute;
   z-index: 5;
+}
+
+/* line 278, ../sass/screen.scss */
+.darken-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 560px) {
+  /* line 287, ../sass/screen.scss */
+  #image-container > h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 294, ../sass/screen.scss */
+  #services {
+    display: flex;
+    min-height: 850px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 300, ../sass/screen.scss */
+  #announcement {
+    display: block;
+    margin: auto;
+    color: #1d3557;
+  }
+  /* line 304, ../sass/screen.scss */
+  #announcement::after {
+    width: 50%;
+    margin: auto;
+    border-bottom: 0.2rem solid #1d3557;
+  }
+
+  /* line 310, ../sass/screen.scss */
+  #services_header {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 3.5rem;
+    color: #457b9d;
+    padding: 1rem 2rem;
+  }
+
+  /* line 318, ../sass/screen.scss */
+  #motivational-quote {
+    height: 200px;
+  }
+  /* line 320, ../sass/screen.scss */
+  #motivational-quote p {
+    font-size: 2rem;
+  }
 }

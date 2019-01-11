@@ -26,25 +26,25 @@
 /* line 7, ../sass/cards.scss */
 .sub-landing-content {
   position: relative;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  align-content: space-around;
   justify-content: space-between;
   width: 100%;
   background: #f1faee;
-  flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
   min-height: 400px;
 }
-/* line 18, ../sass/cards.scss */
+/* line 22, ../sass/cards.scss */
 .sub-landing-content .card-background {
-  height: 300px;
-  width: 30%;
+  height: 270px;
+  width: 480px;
   background: #1d3557;
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-/* line 25, ../sass/cards.scss */
+/* line 29, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details {
   position: absolute;
   top: 10px;
@@ -55,11 +55,11 @@
   transform: scaleY(0);
   transition: transform .5s;
 }
-/* line 34, ../sass/cards.scss */
+/* line 38, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details:hover {
   cursor: pointer;
 }
-/* line 37, ../sass/cards.scss */
+/* line 41, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details .img-content {
   position: absolute;
   top: 50%;
@@ -70,34 +70,73 @@
   color: #f1faee;
   text-align: center;
 }
-/* line 47, ../sass/cards.scss */
+/* line 51, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details .img-content > h2:nth-child(odd) {
   color: #e63946;
 }
-/* line 50, ../sass/cards.scss */
+/* line 54, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details .img-content > h2:nth-child(even) {
   color: #457b9d;
 }
-/* line 54, ../sass/cards.scss */
+/* line 58, ../sass/cards.scss */
 .sub-landing-content .card-background .img-details .img-content p {
   margin: 10px 0 0;
   color: #a8dadc;
 }
-/* line 60, ../sass/cards.scss */
+/* line 64, ../sass/cards.scss */
 .sub-landing-content .card-background:hover .img-box img {
   transform: scale(1.2);
 }
-/* line 63, ../sass/cards.scss */
+/* line 67, ../sass/cards.scss */
 .sub-landing-content .card-background:hover .img-details {
   transform: scaleY(1);
 }
-/* line 66, ../sass/cards.scss */
+/* line 70, ../sass/cards.scss */
 .sub-landing-content .card-background .img-box {
   position: relative;
   overflow: hidden;
 }
-/* line 69, ../sass/cards.scss */
+/* line 73, ../sass/cards.scss */
 .sub-landing-content .card-background .img-box img {
   max-width: 100%;
   transition: transform 2s;
+}
+
+@media only screen and (max-width: 1500px) {
+  /* line 82, ../sass/cards.scss */
+  .sub-landing-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 1700px;
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* line 90, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 960px;
+    height: 540px;
+    margin: auto;
+  }
+
+  /* line 97, ../sass/cards.scss */
+  #announcement > h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 104, ../sass/cards.scss */
+  .sub-landing-content {
+    min-height: calc(270px * 3 + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 110, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 480px;
+    height: 270px;
+  }
 }

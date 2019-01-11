@@ -1,0 +1,7 @@
+# https://github.com/Tranquillia
+
+cd *repository*
+* git status
+git add .
+git commit -m 'reason of file change'
+git push origin master

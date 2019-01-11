@@ -44,7 +44,7 @@ nav {
   background: linear-gradient(-45deg, #457b9d, #1d3557, #457b9d, #1d3557);
   background-size: 400% 400%;
   animation: gradient-transition 7s ease infinite;
-  position: relative;
+  position: fixed;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   z-index: 100;
