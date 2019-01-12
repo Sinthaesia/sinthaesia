@@ -126,7 +126,7 @@
   }
 }
 @media only screen and (max-width: 1200px) {
-  /* line 104, ../sass/cards.scss */
+  /* line 103, ../sass/cards.scss */
   .sub-landing-content {
     min-height: calc(270px * 3 + 100px);
     display: flex;
@@ -134,9 +134,25 @@
     align-items: center;
     flex-direction: column;
   }
-  /* line 110, ../sass/cards.scss */
+  /* line 109, ../sass/cards.scss */
   .sub-landing-content .card-background {
     width: 480px;
     height: 270px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* line 116, ../sass/cards.scss */
+  .sub-landing-content {
+    min-height: calc(217px * 3 + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  /* line 123, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 320px;
+    height: 180px;
   }
 }

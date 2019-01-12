@@ -100,10 +100,10 @@ body {
 /* line 70, ../sass/screen.scss */
 .services_header {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 5rem;
   display: inline-block;
-  padding: 1rem;
-  color: #457b9d;
+  color: #1d3557;
+  padding: 1rem 2rem;
 }
 /* line 76, ../sass/screen.scss */
 .services_header::after {
@@ -113,7 +113,7 @@ body {
   /* This will put the pseudo element on its own line. */
   padding-top: 20px;
   /* This creates some space between the element and the border. */
-  border-bottom: 0.4rem solid #457b9d;
+  border-bottom: 0.4rem solid #1d3557;
   /* This creates the border. Replace black with whatever color you want. */
 }
 
@@ -369,14 +369,8 @@ body {
   background: rgba(0, 0, 0, 0.7);
 }
 
-@media only screen and (max-width: 560px) {
-  /* line 287, ../sass/screen.scss */
-  #image-container > h1 {
-    font-size: 3rem;
-  }
-}
 @media only screen and (max-width: 1200px) {
-  /* line 294, ../sass/screen.scss */
+  /* line 284, ../sass/screen.scss */
   #services {
     display: flex;
     min-height: 850px;
@@ -384,35 +378,160 @@ body {
     align-items: center;
   }
 
-  /* line 300, ../sass/screen.scss */
+  /* line 290, ../sass/screen.scss */
   #announcement {
     display: block;
     margin: auto;
     color: #1d3557;
   }
-  /* line 304, ../sass/screen.scss */
+  /* line 294, ../sass/screen.scss */
   #announcement::after {
     width: 50%;
     margin: auto;
     border-bottom: 0.2rem solid #1d3557;
   }
 
-  /* line 310, ../sass/screen.scss */
-  #services_header {
-    display: block;
+  /* line 300, ../sass/screen.scss */
+  .services_header {
     text-align: center;
     width: 100%;
-    font-size: 3.5rem;
-    color: #457b9d;
-    padding: 1rem 2rem;
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    display: block !important;
+  }
+  /* line 307, ../sass/screen.scss */
+  .services_header::after {
+    width: 50%;
+    margin: auto;
+    border-bottom: 0.2rem solid #1d3557;
   }
 
-  /* line 318, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   #motivational-quote {
     height: 200px;
   }
-  /* line 320, ../sass/screen.scss */
+  /* line 315, ../sass/screen.scss */
   #motivational-quote p {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 323, ../sass/screen.scss */
+  #image-container .darken-overlay > p {
+    font-size: 2.5rem;
+  }
+
+  /* line 328, ../sass/screen.scss */
+  #announcement {
+    display: block;
+    margin: auto;
+    color: #1d3557;
+    font-size: 2.5rem;
+  }
+  /* line 333, ../sass/screen.scss */
+  #announcement::after {
+    width: 50%;
+    margin: auto;
+    border-bottom: 0.2rem solid #1d3557;
+  }
+
+  /* line 339, ../sass/screen.scss */
+  .services_header {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 560px) {
+  /* line 345, ../sass/screen.scss */
+  #image-container > h1 {
+    font-size: 3rem;
+  }
+
+  /* line 349, ../sass/screen.scss */
+  #motivational-quote {
+    height: 180px;
+  }
+  /* line 351, ../sass/screen.scss */
+  #motivational-quote p {
+    font-size: 1.5rem;
+  }
+
+  /* line 355, ../sass/screen.scss */
+  #announcement {
+    display: block;
+    margin: auto;
+    color: #1d3557;
+    font-size: 2rem;
+  }
+  /* line 360, ../sass/screen.scss */
+  #announcement::after {
+    width: 50%;
+    margin: auto;
+    border-bottom: 0.2rem solid #1d3557;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* line 368, ../sass/screen.scss */
+  #motivational-quote {
+    height: 150px;
+  }
+  /* line 370, ../sass/screen.scss */
+  #motivational-quote p {
+    font-size: 1rem;
+  }
+
+  /* line 375, ../sass/screen.scss */
+  #image-container > h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* line 383, ../sass/screen.scss */
+  #image-container .darken-overlay > h1 {
+    font-size: 3rem;
+  }
+  /* line 386, ../sass/screen.scss */
+  #image-container .darken-overlay > p {
+    font-size: 1.5rem;
+  }
+  /* line 389, ../sass/screen.scss */
+  #image-container .darken-overlay .button {
+    font-size: 1.5rem;
+  }
+
+  /* line 394, ../sass/screen.scss */
+  #announcement {
+    display: block;
+    margin: auto;
+    color: #1d3557;
+    font-size: 1.5rem;
+  }
+  /* line 399, ../sass/screen.scss */
+  #announcement::after {
+    width: 50%;
+    margin: auto;
+    border-bottom: 0.2rem solid #1d3557;
+  }
+
+  /* line 405, ../sass/screen.scss */
+  #services {
+    display: flex;
+    min-height: 850px;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 410, ../sass/screen.scss */
+  #services > div {
+    width: calc(348px - 30px);
+    height: calc(217px - 30px);
+  }
+  /* line 413, ../sass/screen.scss */
+  #services > div .content {
+    top: 75px;
+  }
+
+  /* line 418, ../sass/screen.scss */
+  #motivational-quote {
+    margin: 75px 0;
   }
 }

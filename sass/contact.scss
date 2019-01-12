@@ -1,13 +1,11 @@
 @import "compass/css3";
 @import "colors.scss";
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
-
 body{
   background: $dew;
 }
-
 .contact-container{
-  margin: 3rem auto;
+  margin: 150px auto;
   line-height: 1.6;
   max-width: 1170px;
   padding: 1rem;
