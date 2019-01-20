@@ -1,5 +1,5 @@
 @import "compass/css3";
-@import "colors.scss";
+@import "colors";
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
 
 *{
@@ -31,7 +31,7 @@ footer{
         border-left: .25rem solid $queenblue;
         a{
           text-decoration: none;
-          color: $queenblue;
+          color: $txtnickel;
           transition: all .3s ease-in-out;
           padding-left: 1rem;
           &:hover{
@@ -60,11 +60,11 @@ footer{
         display: inline-block;
         height: 90px;
         width: 90px;
-        background: $dew;
+        background: $offnickel;
         margin: 1rem;
         border-radius: 30%;
         box-shadow: 0 5px 15px -5px #00000070;
-        color: $desire;
+        color: $txtnickel;
         overflow: hidden;
         position: relative;
         &::before{
@@ -134,7 +134,7 @@ footer{
             margin: 0;
           }
           a{
-            color: $dew;
+            color: $txtnickel;
             &:hover{
               margin: 0;
             }
@@ -188,7 +188,7 @@ footer{
             margin: 0;
           }
           a{
-            color: $dew;
+            color: $txtnickel;
             padding: 0;
             &:hover{
               margin: 0;

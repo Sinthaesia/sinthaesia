@@ -1,66 +1,166 @@
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 4, ../sass/affiliates.scss */
+body {
+  background: #c5c5c5;
+}
+
+/* line 7, ../sass/affiliates.scss */
+.container_affilliates {
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+/* line 13, ../sass/affiliates.scss */
+.container_affilliates .profile-card {
+  width: 400px;
+  height: 500px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  background: #457b9d;
+  color: #500b07;
+  transition: all 0.3s cubic-bezier(0.61, -0.36, 1, 1);
+}
+/* line 22, ../sass/affiliates.scss */
+.container_affilliates .profile-card:hover {
+  box-shadow: 0 7px 15px -8px black;
+  transform: scale(1.02);
+}
+/* line 26, ../sass/affiliates.scss */
+.container_affilliates .profile-card .card-header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 31, ../sass/affiliates.scss */
+.container_affilliates .profile-card .card-header::before {
+  content: '';
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-left: 400px solid #457b9d;
+  bottom: 0;
+}
+/* line 38, ../sass/affiliates.scss */
+.container_affilliates .profile-card .card-header img {
+  width: 100%;
+  height: 200px;
+}
+
+/* line 45, ../sass/affiliates.scss */
+.card-content {
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 54, ../sass/affiliates.scss */
+.card-content h2 {
+  color: #1d3557;
+  font-size: 2rem;
+  margin: 0 5px 0 0;
+}
+/* line 59, ../sass/affiliates.scss */
+.card-content ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* line 66, ../sass/affiliates.scss */
+.card-content ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 69, ../sass/affiliates.scss */
+.card-content ul li a {
+  background: #1d3557;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-decoration: none;
+  color: #457b9d;
+  transition: all .3s ease-in-out;
+}
+/* line 79, ../sass/affiliates.scss */
+.card-content ul li a:hover {
+  transform: scale(1.2);
+  font-weight: 400;
+}
+
+/* line 87, ../sass/affiliates.scss */
+.card-footer {
+  width: 100%;
+  height: 100px;
+  background: #1d3557;
+  position: relative;
+  box-sizing: content-box;
+}
+/* line 93, ../sass/affiliates.scss */
+.card-footer::before {
+  content: '';
+  position: absolute;
+  border-bottom: 30px solid transparent;
+  border-right: 400px solid #457b9d;
+  top: 0;
+}
+/* line 100, ../sass/affiliates.scss */
+.card-footer p {
+  margin: 0;
+  padding: 2rem;
+  display: block;
+  color: #457b9d;
+  font-weight: bold;
+}
+
+/* line 108, ../sass/affiliates.scss */
+.red {
+  color: #500b07;
+  font-weight: 400;
+}
+
+/* Sizes for reference */
 /*
-Error: File to import not found or unreadable: colors.scss.
-       Load paths:
-         Compass::SpriteImporter
-         C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass
-         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
-        on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/affiliates.scss
-
-1: @import "compass/css3";
-2: @import "colors.scss";
-3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
-4: body{
-5:   background: $dew;
-6: }
-7: .container_affilliates{
-
-Backtrace:
-C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/affiliates.scss:2
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby25-x64/bin/compass:23:in `load'
-C:/Ruby25-x64/bin/compass:23:in `<main>'
+  card: 500px
+  card-header: 200px
+  card-content: 143px
+  footer: 157px
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: colors.scss.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/affiliates.scss\A \A 1: @import \"compass/css3\";\A 2: @import \"colors.scss\";\A 3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');\A 4: body{\A 5:   background: $dew;\A 6: }\A 7: .container_affilliates{"; }

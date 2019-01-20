@@ -1,66 +1,171 @@
-/*
-Error: File to import not found or unreadable: colors.scss.
-       Load paths:
-         Compass::SpriteImporter
-         C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass
-         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
-        on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/cards.scss
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 7, ../sass/cards.scss */
+.sub-landing-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  align-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  background: #48484d;
+  padding: 1rem;
+  min-height: 400px;
+  box-shadow: inset 0px 11px 8px -10px rgba(0, 0, 0, 0.1), inset 0px -11px 8px -10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+/* line 22, ../sass/cards.scss */
+.sub-landing-content .card-background {
+  height: 270px;
+  width: 480px;
+  background: #1d3557;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* line 31, ../sass/cards.scss */
+.sub-landing-content .card-background:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* line 34, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+/* line 43, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details:hover {
+  cursor: pointer;
+}
+/* line 46, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details .img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+  color: #500b07;
+  text-align: center;
+}
+/* line 56, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details .img-content > h2:nth-child(odd) {
+  color: #e63946;
+}
+/* line 59, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details .img-content > h2:nth-child(even) {
+  color: #457b9d;
+}
+/* line 63, ../sass/cards.scss */
+.sub-landing-content .card-background .img-details .img-content p {
+  margin: 10px 0 0;
+  color: #a8dadc;
+}
+/* line 69, ../sass/cards.scss */
+.sub-landing-content .card-background:hover .img-box img {
+  transform: scale(1.2);
+}
+/* line 72, ../sass/cards.scss */
+.sub-landing-content .card-background:hover .img-details {
+  transform: scaleY(1);
+}
+/* line 75, ../sass/cards.scss */
+.sub-landing-content .card-background .img-box {
+  position: relative;
+  overflow: hidden;
+}
+/* line 78, ../sass/cards.scss */
+.sub-landing-content .card-background .img-box img {
+  max-width: 100%;
+  transition: transform 2s;
+}
 
-1: @import "compass/css3";
-2: @import "colors.scss";
-3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
-4: 
-5: $dewhsla: hsla(105%, 55%, 96%, .8);
-6: 
-7: .sub-landing-content{
+@media only screen and (max-width: 1500px) {
+  /* line 87, ../sass/cards.scss */
+  .sub-landing-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 1700px;
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* line 95, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 960px;
+    height: 540px;
+    margin: auto;
+  }
 
-Backtrace:
-C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/cards.scss:2
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby25-x64/bin/compass:23:in `load'
-C:/Ruby25-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: colors.scss.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/cards.scss\A \A 1: @import \"compass/css3\";\A 2: @import \"colors.scss\";\A 3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');\A 4: \A 5: $dewhsla: hsla(105%, 55%, 96%, .8);\A 6: \A 7: .sub-landing-content{"; }
+  /* line 102, ../sass/cards.scss */
+  #announcement > h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 108, ../sass/cards.scss */
+  .sub-landing-content {
+    min-height: calc(270px * 3 + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 114, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 121, ../sass/cards.scss */
+  .sub-landing-content {
+    min-height: calc(217px * 3 + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  /* line 128, ../sass/cards.scss */
+  .sub-landing-content .card-background {
+    width: 320px;
+    height: 180px;
+  }
+}

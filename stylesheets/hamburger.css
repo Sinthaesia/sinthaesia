@@ -3,6 +3,7 @@
 /*BORDEAUX*/
 /*LIGHTER THAN OFF*/
 @import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @-webkit-keyframes gradient-transition {
   0% {
     background-position: 0% 50%;
@@ -34,7 +35,7 @@
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;
-  color: white !important;
+  color: #c5c5c5 !important;
   text-transform: none;
   background-color: transparent;
   float: right;
@@ -80,7 +81,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #f1faee;
+  background-color: #c5c5c5;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

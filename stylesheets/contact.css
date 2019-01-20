@@ -1,66 +1,287 @@
-/*
-Error: File to import not found or unreadable: colors.scss.
-       Load paths:
-         Compass::SpriteImporter
-         C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass
-         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
-        on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact.scss
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 4, ../sass/contact.scss */
+body {
+  background: #c5c5c5;
+}
 
-1: @import "compass/css3";
-2: @import "colors.scss";
-3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
-4: body{
-5:   background: $dew;
-6: }
-7: .contact-container{
+/* line 7, ../sass/contact.scss */
+.contact-container {
+  margin: 150px auto;
+  line-height: 1.6;
+  max-width: 1170px;
+  padding: 1rem;
+}
+/* line 12, ../sass/contact.scss */
+.contact-container .brand {
+  text-align: center;
+  color: #e63946;
+}
+/* line 16, ../sass/contact.scss */
+.contact-container .contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(29, 53, 87, 0.7);
+}
+/* line 18, ../sass/contact.scss */
+.contact-container .contact-wrapper * {
+  padding: 1rem;
+}
+/* line 21, ../sass/contact.scss */
+.contact-container .contact-wrapper .company-info {
+  background: linear-gradient(-45deg, #1d3557, #457b9d);
+  color: white;
+}
+/* line 24, ../sass/contact.scss */
+.contact-container .contact-wrapper .company-info h3, .contact-container .contact-wrapper .company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+/* line 28, ../sass/contact.scss */
+.contact-container .contact-wrapper .company-info h3 li a, .contact-container .contact-wrapper .company-info ul li a {
+  padding: 0 !important;
+  text-decoration: none;
+  color: white;
+}
+/* line 36, ../sass/contact.scss */
+.contact-container .contact-wrapper .contact-form {
+  background: #ebebeb;
+}
+/* line 39, ../sass/contact.scss */
+.contact-container .contact-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
 
-Backtrace:
-C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact.scss:2
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby25-x64/bin/compass:23:in `load'
-C:/Ruby25-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: colors.scss.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact.scss\A \A 1: @import \"compass/css3\";\A 2: @import \"colors.scss\";\A 3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');\A 4: body{\A 5:   background: $dew;\A 6: }\A 7: .contact-container{"; }
+/* line 46, ../sass/contact.scss */
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2rem;
+}
+/* line 50, ../sass/contact.scss */
+.contact-form form p {
+  margin: 0;
+}
+/* line 53, ../sass/contact.scss */
+.contact-form form label {
+  display: block;
+}
+/* line 56, ../sass/contact.scss */
+.contact-form form .full {
+  grid-column: 1 / 3;
+}
+/* line 59, ../sass/contact.scss */
+.contact-form form .right-half {
+  grid-column: 2 / 3;
+}
+/* line 62, ../sass/contact.scss */
+.contact-form form input, .contact-form form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #1d3557;
+}
+/* line 67, ../sass/contact.scss */
+.contact-form form button {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 90, ../sass/contact.scss */
+  .contact-form {
+    border: 1px solid #1d3557;
+  }
+
+  /* line 93, ../sass/contact.scss */
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  /* line 96, ../sass/contact.scss */
+  .contact-wrapper > * {
+    padding: 2rem;
+  }
+
+  /* line 100, ../sass/contact.scss */
+  .company-info {
+    line-height: 1rem;
+  }
+  /* line 102, ../sass/contact.scss */
+  .company-info h3, .company-info ul {
+    text-align: left !important;
+  }
+  /* line 105, ../sass/contact.scss */
+  .company-info h3 {
+    font-size: 2rem;
+  }
+  /* line 109, ../sass/contact.scss */
+  .company-info ul li {
+    font-size: 1.25rem;
+  }
+  /* line 111, ../sass/contact.scss */
+  .company-info ul li i {
+    margin-right: 5px;
+  }
+  /* line 116, ../sass/contact.scss */
+  .company-info .contact-markup {
+    border-bottom: .25rem solid black;
+  }
+
+  /* line 120, ../sass/contact.scss */
+  .button {
+    z-index: 0;
+    border: 1px solid #1d3557;
+    background: none;
+    cursor: pointer;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+  /* line 129, ../sass/contact.scss */
+  .button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #1d3557;
+    transition: .8s ease;
+    z-index: -1;
+  }
+
+  /* line 140, ../sass/contact.scss */
+  .waveywido {
+    z-index: 0;
+    color: #ebebeb !important;
+  }
+  /* line 143, ../sass/contact.scss */
+  .waveywido::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  /* line 147, ../sass/contact.scss */
+  .waveywido::before {
+    height: 190%;
+  }
+  /* line 150, ../sass/contact.scss */
+  .waveywido:hover {
+    color: #1d3557 !important;
+  }
+  /* line 153, ../sass/contact.scss */
+  .waveywido:hover::before {
+    height: 0;
+  }
+}
+/* line 160, ../sass/contact.scss */
+::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* Chrome <=56, Safari < 10 */
+/* line 161, ../sass/contact.scss */
+:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* FF 4-18 */
+/* line 162, ../sass/contact.scss */
+::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* FF 19-51 */
+/* line 163, ../sass/contact.scss */
+:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* IE 10+ */
+/* line 164, ../sass/contact.scss */
+::placeholder {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+/* Modern Browsers */
+/* line 166, ../sass/contact.scss */
+*:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+/* Chrome <=56, Safari < 10 */
+/* line 167, ../sass/contact.scss */
+*:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+/* FF 4-18 */
+/* line 168, ../sass/contact.scss */
+*:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* FF 19-50 */
+/* line 169, ../sass/contact.scss */
+*:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+/* IE 10+ */
+/* line 170, ../sass/contact.scss */
+*:focus::placeholder {
+  opacity: 0;
+}
+
+/* Modern Browsers */
+/* line 171, ../sass/contact.scss */
+input[type=text], input[type=email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+/* line 176, ../sass/contact.scss */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 5px #1d3557;
+}
+
+/* line 179, ../sass/contact.scss */
+textarea {
+  resize: none;
+}

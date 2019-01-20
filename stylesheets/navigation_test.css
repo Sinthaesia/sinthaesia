@@ -2,6 +2,10 @@
 /* RGB */
 /* HSL */
 /* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @-webkit-keyframes gradient-transition {
   0% {
@@ -194,7 +198,7 @@ header#desktop-icons .logo h1 {
   }
   /* line 150, ../sass/navigation_test.scss */
   header#icon-header .logo {
-    color: #fff;
+    color: #c5c5c5;
     height: 65px;
     line-height: 65px;
     font-size: 24px;
@@ -245,7 +249,7 @@ header#desktop-icons .logo h1 {
   }
   /* line 193, ../sass/navigation_test.scss */
   header#icon-header nav ul li a {
-    color: #f1faee;
+    color: #c5c5c5;
     font-size: 1.25rem;
     opacity: .75;
     transition: all .3s ease-out;

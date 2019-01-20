@@ -1,4 +1,4 @@
-@import "colors.scss";
+@import "colors";
 
 .hamburger {
   z-index: 9999;
@@ -8,7 +8,7 @@
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;
-  color: white !important;
+  color: $txtnickel !important;
   text-transform: none;
   background-color: transparent;
   float: right;
@@ -38,7 +38,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: $dewish;
+    background-color: $txtnickel;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

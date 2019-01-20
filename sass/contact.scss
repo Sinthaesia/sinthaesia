@@ -1,8 +1,8 @@
 @import "compass/css3";
-@import "colors.scss";
+@import "colors";
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
 body{
-  background: $dew;
+  background: $txtnickel;
 }
 .contact-container{
   margin: 150px auto;
@@ -34,7 +34,7 @@ body{
       }
     }
     .contact-form{
-      background: #f9feff;
+      background: lighten($txtnickel, 15);
     }
     ul{
       list-style: none;
@@ -126,20 +126,20 @@ body{
   position: relative;
   overflow: hidden;
   font-size: 1.5rem;
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: $spaceblue;
-    transition: .8s ease;
-    z-index: -1;
-  }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background: $spaceblue;
+      transition: .8s ease;
+      z-index: -1;
+    }
   }
   .waveywido{
     z-index: 0;
-    color: $dew !important;
+    color: lighten($txtnickel, 15) !important;
     &::before{
       top: 0;
       border-radius: 0 0 50% 50%;
