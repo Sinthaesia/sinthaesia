@@ -1,124 +1,66 @@
-/* HSL */
-/* RGB */
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
-@-webkit-keyframes gradient-transition {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-webkit-keyframes lightshow {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-/* line 5, ../sass/contact0.scss */
-body {
-  background: #f1faee;
-}
+/*
+Error: File to import not found or unreadable: colors.scss.
+       Load paths:
+         Compass::SpriteImporter
+         C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass
+         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
+        on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact0.scss
 
-/* line 9, ../sass/contact0.scss */
-.contact-container {
-  line-height: 1.6;
-  max-width: 1170px;
-  margin: auto;
-  padding: 1rem;
-}
-/* line 14, ../sass/contact0.scss */
-.contact-container .brand {
-  text-align: center;
-  color: #e63946;
-}
-/* line 18, ../sass/contact0.scss */
-.contact-container .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(29, 53, 87, 0.7);
-}
-/* line 20, ../sass/contact0.scss */
-.contact-container .contact-wrapper * {
-  padding: 1rem;
-}
-/* line 23, ../sass/contact0.scss */
-.contact-container .contact-wrapper .company-info {
-  background: #457b9d;
-}
-/* line 25, ../sass/contact0.scss */
-.contact-container .contact-wrapper .company-info h3, .contact-container .contact-wrapper .company-info ul {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-/* line 30, ../sass/contact0.scss */
-.contact-container .contact-wrapper .contact-form {
-  background: #f9feff;
-}
-/* line 33, ../sass/contact0.scss */
-.contact-container .contact-wrapper ul {
-  list-style: none;
-  padding: 0;
-}
+1: @import "compass/css3";
+2: @import "colors.scss";
+3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
+4: 
+5: body{
+6:   background: $dew;
+7: }
 
-/* form style markup */
-/* line 43, ../sass/contact0.scss */
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.2rem;
-}
-/* line 47, ../sass/contact0.scss */
-.contact-form form p {
-  margin: 0;
-}
-/* line 50, ../sass/contact0.scss */
-.contact-form form label {
-  display: block;
-}
-/* line 53, ../sass/contact0.scss */
-.contact-form form .full {
-  grid-column: 1 / 3;
-}
-/* line 56, ../sass/contact0.scss */
-.contact-form form button, .contact-form form input, .contact-form form textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #a8dadc;
-}
-/* line 61, ../sass/contact0.scss */
-.contact-form form button {
-  background: #457b9d;
-  border: 0;
-  text-transform: uppercase;
-  transition: all .3s ease-out;
-}
-/* line 66, ../sass/contact0.scss */
-.contact-form form button:hover, .contact-form form button:focus {
-  background: #a8dadc;
-  color: #f1faee;
-  outline: 0;
-}
-
-@media only screen and (min-width: 700px) {
-  /* line 76, ../sass/contact0.scss */
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  /* line 79, ../sass/contact0.scss */
-  .contact-wrapper > * {
-    padding: 2rem;
-  }
-
-  /* line 84, ../sass/contact0.scss */
-  .company-info h3, .company-info ul {
-    text-align: left !important;
-  }
-}
+Backtrace:
+C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact0.scss:2
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+C:/Ruby25-x64/bin/compass:23:in `load'
+C:/Ruby25-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: colors.scss.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 2 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/contact0.scss\A \A 1: @import \"compass/css3\";\A 2: @import \"colors.scss\";\A 3: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');\A 4: \A 5: body{\A 6:   background: $dew;\A 7: }"; }

@@ -7,51 +7,58 @@ $spacebluehsl: hsla(215%, 50%, 23%, 1);
 
 /* RGB */
 $desire: rgba(230, 57, 70, 1);
-$dew: rgba(241, 250, 238, 1);
+$dew: rgba(80, 11, 7, 1);
+$dewish: rgba(241, 250, 238, 1);
 $lightblue: rgba(168, 218, 220, 1);
 $queenblue: rgba(69, 123, 157, 1);
 $spaceblue: rgba(29, 53, 87, 1);
+$messy: rgba(0, 153, 77,1); /*BORDEAUX*/
+$nickel: rgba(72, 72, 77, 1); /*LIGHTER THAN OFF*/
+$offnickel: rgba(58, 58, 58, 1);
+$txtnickel: rgba(197, 197, 197, 1);
+$bordergray: rgba(35,35,35,1);
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
 
 
-@mixin responsive-ratio($x,$y, $pseudo: false) {
-    $padding: unquote( ( $y / $x ) * 100 + '%' );
-    @if $pseudo {
-        &:before {
-            @include pseudo($pos: relative);
-            width: 100%;
-            padding-top: $padding;
-        }
-    } @else {
-        padding-top: $padding;
-    }
-}
+// @mixin responsive-ratio($x,$y, $pseudo: false) {
+//     $padding: unquote( ( $y / $x ) * 100 + '%' );
+//     @if $pseudo {
+//         &:before {
+//             @include pseudo($pos: relative);
+//             width: 100%;
+//             padding-top: $padding;
+//         }
+//     } @else {
+//         padding-top: $padding;
+//     }
+// }
 
 // div {
 //     @include responsive-ratio(16,9);
 // }
 
 
-$breakpoints: (
-    "phone":        400px,
-    "phone-wide":   480px,
-    "phablet":      560px,
-    "tablet-small": 640px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
-);
-@mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
-    }
-}
+// $breakpoints: (
+//     "phone":        400px,
+//     "phone-wide":   480px,
+//     "phablet":      560px,
+//     "tablet-small": 640px,
+//     "tablet":       768px,
+//     "tablet-wide":  1024px,
+//     "desktop":      1248px,
+//     "desktop-wide": 1440px
+// );
+// @mixin mq($width, $type: min) {
+//     @if map_has_key($breakpoints, $width) {
+//         $width: map_get($breakpoints, $width);
+//         @if $type == max {
+//             $width: $width - 1px;
+//         }
+//         @media only screen and (#{$type}-width: $width) {
+//             @content;
+//         }
+//     }
+// }
 
 // .site-header {
 //     padding: 2rem;
@@ -64,9 +71,9 @@ $breakpoints: (
 
 @mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
   width: 100%;
-  position: relative;
-  background: linear-gradient(to right, $spaceblue 0%, $queenblue 100%);
-  margin: 150px 0;
+  // position: relative;
+  background: linear-gradient(to right, darken($nickel, 10) 0%, darken($offnickel, 10) 100%);
+  // margin: 150px 0;
   &::before,
   &::after{
     content: '';
@@ -99,9 +106,7 @@ $breakpoints: (
         bottom: 0;
         transform-origin: right bottom;
         transform: skewY(-$angle-btm);
-
       }
-
       @if $pos-btm == 'bottomright' {
         bottom: 0;
         transform-origin: left bottom;

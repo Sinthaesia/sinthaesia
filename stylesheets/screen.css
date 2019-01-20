@@ -1,537 +1,70 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* HSL */
-/* RGB */
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400");
-@-webkit-keyframes gradient-transition {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-webkit-keyframes lightshow {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 300% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-/* line 10, ../sass/screen.scss */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+/*
+Error: File to import not found or unreadable: colors.scss.
+       Load paths:
+         Compass::SpriteImporter
+         C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass
+         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
+        on line 7 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/screen.scss
 
-/* line 16, ../sass/screen.scss */
-body {
-  background: #f1faee;
-  font-family: 'Poppins', sans-serif;
-}
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/css3";
+7: @import "colors.scss";
+8: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');
+9: 
+10: *{
+11:   box-sizing: border-box;
+12:   padding: 0;
 
-/* line 20, ../sass/screen.scss */
-#image-container {
-  width: 100%;
-  height: 100vh;
-  min-height: auto;
-  background: #a8dadc;
-  background-image: url("../images/background-landing-page.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  color: #1d3557;
-}
-/* line 32, ../sass/screen.scss */
-#image-container .darken-overlay {
-  font-size: 17px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-}
-/* line 39, ../sass/screen.scss */
-#image-container .darken-overlay > h1 {
-  font-size: 5rem;
-  color: #f1faee;
-}
-/* line 43, ../sass/screen.scss */
-#image-container .darken-overlay > p {
-  font-size: 3.5rem;
-  color: #457b9d;
-}
-/* line 47, ../sass/screen.scss */
-#image-container .darken-overlay .button {
-  font-size: 18px;
-  text-decoration: none;
-  color: #f1faee;
-  border: 2px solid #f1faee;
-  border-radius: 19px;
-  margin-top: 20px;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  background: transparent;
-  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-}
-/* line 62, ../sass/screen.scss */
-#image-container .darken-overlay .button:hover {
-  background: #f1faee;
-  border: 2px solid #1d3557;
-  color: #1d3557;
-}
-
-/* line 70, ../sass/screen.scss */
-.services_header {
-  text-align: center;
-  font-size: 5rem;
-  display: inline-block;
-  color: #1d3557;
-  padding: 1rem 2rem;
-}
-/* line 76, ../sass/screen.scss */
-.services_header::after {
-  content: "";
-  /* This is necessary for the pseudo element to work. */
-  display: block;
-  /* This will put the pseudo element on its own line. */
-  padding-top: 20px;
-  /* This creates some space between the element and the border. */
-  border-bottom: 0.4rem solid #1d3557;
-  /* This creates the border. Replace black with whatever color you want. */
-}
-
-/* line 85, ../sass/screen.scss */
-#announcement {
-  font-size: 3.5rem;
-  padding: 1rem 2rem;
-  width: auto;
-  display: inline-block;
-  position: relative;
-  color: #1d3557;
-}
-/* line 92, ../sass/screen.scss */
-#announcement::after {
-  content: "";
-  /* This is necessary for the pseudo element to work. */
-  display: block;
-  /* This will put the pseudo element on its own line. */
-  padding-top: 20px;
-  /* This creates some space between the element and the border. */
-  border-bottom: 0.4rem solid #1d3557;
-  /* This creates the border. Replace black with whatever color you want. */
-}
-/* line 100, ../sass/screen.scss */
-#announcement > h1 {
-  width: auto;
-}
-
-/* line 104, ../sass/screen.scss */
-.video-background {
-  /* class name used in javascript too */
-  width: 100%;
-  /* width needs to be set to 100% */
-  height: 100%;
-  /* height needs to be set to 100% */
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-/* line 113, ../sass/screen.scss */
-#services {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: space-around;
-  margin: 3% 0;
-}
-/* line 119, ../sass/screen.scss */
-#services > div {
-  padding: 1rem;
-  width: calc(400px - 30px);
-  height: calc(250px - 30px);
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-}
-/* line 131, ../sass/screen.scss */
-#services > div::before, #services > div::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(45deg, #e63946, #f1faee, #a8dadc, #457b9d, #1d3557, #e63946, #f1faee, #a8dadc, #457b9d, #1d3557);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: lightshow 20s linear infinite;
-}
-/* line 145, ../sass/screen.scss */
-#services > div::after {
-  filter: blur(10px);
-}
-/* line 148, ../sass/screen.scss */
-#services > div .content {
-  position: absolute;
-  top: 100px;
-  height: calc(100% - 100px);
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-}
-/* line 167, ../sass/screen.scss */
-#services > div .content h3 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-size: 24px;
-}
-/* line 174, ../sass/screen.scss */
-#services > div:nth-child(odd) {
-  background: #a8dadc;
-}
-/* line 177, ../sass/screen.scss */
-#services > div:nth-child(even) {
-  background: #1d3557;
-}
-/* line 180, ../sass/screen.scss */
-#services > div:hover .icon .fas {
-  font-size: 40px;
-}
-/* line 183, ../sass/screen.scss */
-#services > div:hover .icon {
-  top: 20px;
-  left: calc(50% - 40px);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-/* line 190, ../sass/screen.scss */
-#services > div .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f1faee;
-  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  z-index: 1 !important;
-}
-/* line 204, ../sass/screen.scss */
-#services > div .icon .fas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
-}
-/* line 215, ../sass/screen.scss */
-#services > div .icon .fas:nth-child(odd) {
-  color: #a8dadc;
-}
-/* line 218, ../sass/screen.scss */
-#services > div .icon .fas:nth-child(even) {
-  color: #1d3557;
-}
-
-/* line 225, ../sass/screen.scss */
-#motivational-quote {
-  margin: 5vh 0;
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(-45deg, #e63946, #f1faee, #a8dadc, #457b9d, #1d3557);
-  background-size: 400% 400%;
-  animation: gradient-transition 7s ease infinite;
-  width: 100%;
-  position: relative;
-  background: linear-gradient(to right, #1d3557 0%, #457b9d 100%);
-  margin: 150px 0;
-  padding: 2rem;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-/* line 70, ../sass/colors.scss */
-#motivational-quote::before, #motivational-quote::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  transition: ease all .5s;
-}
-/* line 82, ../sass/colors.scss */
-#motivational-quote::before {
-  top: 0;
-  transform-origin: right top;
-  transform: skewY(3deg);
-}
-/* line 97, ../sass/colors.scss */
-#motivational-quote::after {
-  bottom: 0;
-  transform-origin: left bottom;
-  transform: skewY(3deg);
-}
-/* line 238, ../sass/screen.scss */
-#motivational-quote p {
-  font-size: 3rem;
-  font-weight: bold;
-  transform: rotate(3deg);
-  color: #a8dadc;
-}
-/* line 243, ../sass/screen.scss */
-#motivational-quote p::before {
-  content: open-quote;
-  color: #e63946;
-  margin-right: 5px;
-}
-/* line 248, ../sass/screen.scss */
-#motivational-quote p::after {
-  content: close-quote;
-  color: #e63946;
-  margin-left: 5px;
-}
-
-/* line 255, ../sass/screen.scss */
-#feedback {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/* line 261, ../sass/screen.scss */
-#feedback div {
-  width: 33%;
-  padding: 2rem;
-}
-/* line 264, ../sass/screen.scss */
-#feedback div:nth-child(odd) {
-  background: #e63946;
-}
-
-/* line 270, ../sass/screen.scss */
-.clickable {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 5;
-}
-
-/* line 278, ../sass/screen.scss */
-.darken-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-@media only screen and (max-width: 1200px) {
-  /* line 284, ../sass/screen.scss */
-  #services {
-    display: flex;
-    min-height: 850px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* line 290, ../sass/screen.scss */
-  #announcement {
-    display: block;
-    margin: auto;
-    color: #1d3557;
-  }
-  /* line 294, ../sass/screen.scss */
-  #announcement::after {
-    width: 50%;
-    margin: auto;
-    border-bottom: 0.2rem solid #1d3557;
-  }
-
-  /* line 300, ../sass/screen.scss */
-  .services_header {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    height: 200px;
-    display: block !important;
-  }
-  /* line 307, ../sass/screen.scss */
-  .services_header::after {
-    width: 50%;
-    margin: auto;
-    border-bottom: 0.2rem solid #1d3557;
-  }
-
-  /* line 313, ../sass/screen.scss */
-  #motivational-quote {
-    height: 200px;
-  }
-  /* line 315, ../sass/screen.scss */
-  #motivational-quote p {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 700px) {
-  /* line 323, ../sass/screen.scss */
-  #image-container .darken-overlay > p {
-    font-size: 2.5rem;
-  }
-
-  /* line 328, ../sass/screen.scss */
-  #announcement {
-    display: block;
-    margin: auto;
-    color: #1d3557;
-    font-size: 2.5rem;
-  }
-  /* line 333, ../sass/screen.scss */
-  #announcement::after {
-    width: 50%;
-    margin: auto;
-    border-bottom: 0.2rem solid #1d3557;
-  }
-
-  /* line 339, ../sass/screen.scss */
-  .services_header {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 560px) {
-  /* line 345, ../sass/screen.scss */
-  #image-container > h1 {
-    font-size: 3rem;
-  }
-
-  /* line 349, ../sass/screen.scss */
-  #motivational-quote {
-    height: 180px;
-  }
-  /* line 351, ../sass/screen.scss */
-  #motivational-quote p {
-    font-size: 1.5rem;
-  }
-
-  /* line 355, ../sass/screen.scss */
-  #announcement {
-    display: block;
-    margin: auto;
-    color: #1d3557;
-    font-size: 2rem;
-  }
-  /* line 360, ../sass/screen.scss */
-  #announcement::after {
-    width: 50%;
-    margin: auto;
-    border-bottom: 0.2rem solid #1d3557;
-  }
-}
-@media only screen and (max-width: 430px) {
-  /* line 368, ../sass/screen.scss */
-  #motivational-quote {
-    height: 150px;
-  }
-  /* line 370, ../sass/screen.scss */
-  #motivational-quote p {
-    font-size: 1rem;
-  }
-
-  /* line 375, ../sass/screen.scss */
-  #image-container > h1 {
-    font-size: 2rem;
-  }
-}
-@media only screen and (max-width: 375px) {
-  /* line 383, ../sass/screen.scss */
-  #image-container .darken-overlay > h1 {
-    font-size: 3rem;
-  }
-  /* line 386, ../sass/screen.scss */
-  #image-container .darken-overlay > p {
-    font-size: 1.5rem;
-  }
-  /* line 389, ../sass/screen.scss */
-  #image-container .darken-overlay .button {
-    font-size: 1.5rem;
-  }
-
-  /* line 394, ../sass/screen.scss */
-  #announcement {
-    display: block;
-    margin: auto;
-    color: #1d3557;
-    font-size: 1.5rem;
-  }
-  /* line 399, ../sass/screen.scss */
-  #announcement::after {
-    width: 50%;
-    margin: auto;
-    border-bottom: 0.2rem solid #1d3557;
-  }
-
-  /* line 405, ../sass/screen.scss */
-  #services {
-    display: flex;
-    min-height: 850px;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* line 410, ../sass/screen.scss */
-  #services > div {
-    width: calc(348px - 30px);
-    height: calc(217px - 30px);
-  }
-  /* line 413, ../sass/screen.scss */
-  #services > div .content {
-    top: 75px;
-  }
-
-  /* line 418, ../sass/screen.scss */
-  #motivational-quote {
-    margin: 75px 0;
-  }
-}
+Backtrace:
+C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/screen.scss:7
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+C:/Ruby25-x64/bin/compass:23:in `load'
+C:/Ruby25-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: colors.scss.\A        Load paths:\A          Compass::SpriteImporter\A          C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 7 of C:/Users/daana/OneDrive/Documenten/School/2018/Projects/portfolio/sass/screen.scss\A \A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/css3\";\A 7: @import \"colors.scss\";\A 8: @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400');\A 9: \A 10: *{\A 11:   box-sizing: border-box;\A 12:   padding: 0;"; }

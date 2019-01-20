@@ -1,0 +1,244 @@
+@import "compass/css3";
+@import "mixins.scss";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import "hamburgers";
+
+:root{
+  font-size: 16px !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+header#desktop-icons{
+  display: block;
+  nav#icons{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(-45deg, $queenblue, $spaceblue, $queenblue, $spaceblue);
+    background-size: 400% 400%;
+    animation: gradient-transition 7s ease infinite;
+    position: fixed;
+    top: 0;
+    // border-bottom-left-radius: 10px;
+    // border-bottom-right-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    z-index: 100;
+    > ul{
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      // background: $myellowhsl;
+      height: 100%;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      justify-content: flex-end;
+      > li{
+        list-style: none;
+        text-align: center;
+        border-right: 1px solid rgba(0,0,0,.2);
+        &:nth-last-child(1){
+          border-right: none;
+        }
+
+        > a{
+          text-decoration: none;
+          padding: 0 50px;
+          display: block;
+        }
+      }
+    }
+  }
+  ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  ul li a .name span{
+    display: block;
+    position: relative;
+    color: $lightblue;
+    font-size: 18px;
+    line-height: 20px;
+    transition: .5s;
+  }
+  ul li a .name span::before{
+    content:attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $desire;
+  }
+  ul li a:hover .name span{
+    transform: translateY(20px);
+  }
+  ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    overflow: hidden;
+    margin: 0 auto 10px;
+  }
+
+  ul li a .icon .fas{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: .5s;
+    color: $lightblue;
+  }
+  ul li a .icon .fas:nth-last-child(1){
+    color: $desire;
+  }
+  ul li a:hover .icon .fas{
+    transform: translateY(-100%);
+  }
+
+  .logo{
+    position: absolute;
+    left: 2rem;
+    color: $lightblue;
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+         -moz-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+          -ms-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+           -o-transition: all .3s cubic-bezier(.42,.42,.75,.74);
+              transition: all .3s cubic-bezier(.42,.42,.75,.74);
+    &:hover{
+      color: $desire;
+    }
+    h1{
+    font-size: 2rem;
+    }
+  }
+}
+@media only screen and (min-width: 992px){
+header#icon-header{display: none;}
+}
+@media only screen and (max-width: 991px){
+header#desktop-icons{
+  display: none;
+}
+header#icon-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, $queenblue, $spaceblue, $queenblue, $spaceblue);
+  background-size: 400% 400%;
+  animation: gradient-transition 7s ease infinite;
+  display: block;
+  height: 65px;
+  .logo {
+    color: #fff;
+    height: 65px;
+    line-height: 65px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+  }
+  nav {
+    /* use display none or left:-100% to hide the nav  */
+    /* display: none; */
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    right: 0;
+    width: 0vw;
+    height: calc(100vh - 65px);
+    background: #333;
+    // transition: 0.5s;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+      li {
+        list-style: none;
+        position: relative;
+      }
+    }
+  }
+}
+header nav ul li.sub-menu:before {
+  content: '\f078';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: #fff;
+  right: 1px;
+}
+header nav ul li.active.sub-menu:before {
+  content: '\f077';
+}
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #333;
+  display: none
+}
+header nav ul li.active ul {
+  /* use li: hover instead */
+  display: block;
+}
+header nav ul li ul li {
+  display: block;
+  width: 200px;
+}
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+header nav ul li a:hover {
+  color: #fff;
+  background: #2196f3;
+}
+header nav ul li a.active {
+  background: #2196f3;
+}
+// button{
+//   color: #fff;
+//   float: right;
+//   line-height: 65px;
+//   font-size: 24px;
+//   cursor: pointer;
+//   display: block;
+//   line-height: 65px;
+//   padding: 0;
+// }
+}
+
+.something{
+  display: block;
+  position: relative;
+}
+
+.test-content{
+  height: 1500px;
+  width: 100%;
+  background: $lightblue;
+  padding-top: 65px;
+}
