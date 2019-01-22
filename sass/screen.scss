@@ -228,8 +228,6 @@ body{
   margin: 150px 0;
   width: 100%;
   height: 300px;
-  background: linear-gradient(-45deg, $desire, $dew, $lightblue, $queenblue, $spaceblue);
-  background-size: 400% 400%;
   animation: gradient-transition 7s ease infinite;
   @include angle-edge(topleft, 3deg, bottomright, 3deg);
   padding: 2rem;
@@ -241,15 +239,30 @@ body{
     font-size: 3rem;
     font-weight: bold;
     transform: rotate(3deg);
-    color: $lightblue;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.15);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
     &::before{
       content: open-quote;
-      color: $desire;
+      background-color: #565656;
+      color: transparent;
+      text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+      -webkit-background-clip: text;
+         -moz-background-clip: text;
+              background-clip: text;
       margin-right: 5px;
     }
     &::after{
       content: close-quote;
-      color: $desire;
+      background-color: #565656;
+      color: transparent;
+      text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+      -webkit-background-clip: text;
+         -moz-background-clip: text;
+              background-clip: text;
       margin-left: 5px;
     }
   }

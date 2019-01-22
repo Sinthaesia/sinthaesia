@@ -44,71 +44,74 @@ footer {
 /* line 16, ../sass/footer.scss */
 footer .sitemap {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-/* line 18, ../sass/footer.scss */
+/* line 21, ../sass/footer.scss */
 footer .sitemap > h2 {
   font-size: 2em;
   color: #a8dadc;
 }
-/* line 22, ../sass/footer.scss */
+/* line 25, ../sass/footer.scss */
 footer .sitemap ul {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-/* line 27, ../sass/footer.scss */
+/* line 30, ../sass/footer.scss */
 footer .sitemap ul li {
   list-style: none;
   font-size: 1.5em;
   padding: .5rem;
   border-left: 0.25rem solid #457b9d;
 }
-/* line 32, ../sass/footer.scss */
+/* line 35, ../sass/footer.scss */
 footer .sitemap ul li a {
   text-decoration: none;
   color: #c5c5c5;
   transition: all .3s ease-in-out;
   padding-left: 1rem;
 }
-/* line 37, ../sass/footer.scss */
+/* line 40, ../sass/footer.scss */
 footer .sitemap ul li a:hover {
   color: #a8dadc;
   margin-left: 15px;
   font-weight: 500;
 }
-/* line 46, ../sass/footer.scss */
+/* line 49, ../sass/footer.scss */
 footer .social-container {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 51, ../sass/footer.scss */
+/* line 54, ../sass/footer.scss */
 footer .social-container > h2 {
   text-align: right;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #a8dadc;
 }
-/* line 56, ../sass/footer.scss */
+/* line 59, ../sass/footer.scss */
 footer .social-container .social-icons {
   text-align: right;
 }
-/* line 58, ../sass/footer.scss */
+/* line 61, ../sass/footer.scss */
 footer .social-container .social-icons .social-button {
   text-align: center;
   display: inline-block;
   height: 90px;
   width: 90px;
-  background: #3a3a3a;
+  background: #b3b3b3;
   margin: 1rem;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: #c5c5c5;
+  color: #3a3a3a;
   overflow: hidden;
   position: relative;
 }
-/* line 70, ../sass/footer.scss */
+/* line 73, ../sass/footer.scss */
 footer .social-container .social-icons .social-button::before {
   content: "";
   position: absolute;
@@ -119,22 +122,22 @@ footer .social-container .social-icons .social-button::before {
   left: -110%;
   top: 90%;
 }
-/* line 80, ../sass/footer.scss */
+/* line 83, ../sass/footer.scss */
 footer .social-container .social-icons .social-button:hover::before {
   animation: social-transition .7s 1;
   top: -10%;
   left: -10%;
 }
-/* line 85, ../sass/footer.scss */
+/* line 88, ../sass/footer.scss */
 footer .social-container .social-icons .social-button:nth-last-child(1) {
   margin-right: 0;
 }
-/* line 88, ../sass/footer.scss */
+/* line 91, ../sass/footer.scss */
 footer .social-container .social-icons .social-button:hover i {
   transform: scale(1.3);
   color: #1d3557;
 }
-/* line 92, ../sass/footer.scss */
+/* line 95, ../sass/footer.scss */
 footer .social-container .social-icons .social-button i {
   line-height: 90px;
   font-size: 1.5em;
@@ -157,86 +160,86 @@ footer .social-container .social-icons .social-button i {
 }
 /* responsive-ratio */
 @media only screen and (max-width: 1050px) {
-  /* line 115, ../sass/footer.scss */
+  /* line 118, ../sass/footer.scss */
   footer {
     height: auto;
     display: flex;
     flex-direction: column;
   }
-  /* line 119, ../sass/footer.scss */
+  /* line 122, ../sass/footer.scss */
   footer .sitemap {
     width: 100%;
   }
-  /* line 121, ../sass/footer.scss */
+  /* line 124, ../sass/footer.scss */
   footer .sitemap > h2 {
     font-size: 2em;
     text-align: center;
   }
-  /* line 125, ../sass/footer.scss */
+  /* line 128, ../sass/footer.scss */
   footer .sitemap ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* line 130, ../sass/footer.scss */
+  /* line 133, ../sass/footer.scss */
   footer .sitemap ul li {
     font-size: 1rem;
     border: none;
   }
-  /* line 133, ../sass/footer.scss */
+  /* line 136, ../sass/footer.scss */
   footer .sitemap ul li:nth-child(1) {
     margin: 0;
   }
-  /* line 136, ../sass/footer.scss */
+  /* line 139, ../sass/footer.scss */
   footer .sitemap ul li a {
     color: #c5c5c5;
   }
-  /* line 138, ../sass/footer.scss */
+  /* line 141, ../sass/footer.scss */
   footer .sitemap ul li a:hover {
     margin: 0;
   }
-  /* line 145, ../sass/footer.scss */
+  /* line 148, ../sass/footer.scss */
   footer .social-container {
     width: 100%;
   }
-  /* line 147, ../sass/footer.scss */
+  /* line 150, ../sass/footer.scss */
   footer .social-container > h2 {
     text-align: center;
   }
-  /* line 150, ../sass/footer.scss */
+  /* line 153, ../sass/footer.scss */
   footer .social-container .social-icons {
     text-align: center;
   }
-  /* line 152, ../sass/footer.scss */
+  /* line 155, ../sass/footer.scss */
   footer .social-container .social-icons .social-button {
     height: 60px;
     width: 60px;
   }
-  /* line 155, ../sass/footer.scss */
+  /* line 158, ../sass/footer.scss */
   footer .social-container .social-icons .social-button i {
     line-height: 60px;
   }
 }
 @media only screen and (max-width: 415px) {
-  /* line 164, ../sass/footer.scss */
+  /* line 167, ../sass/footer.scss */
   footer {
     height: auto;
     display: flex;
     flex-direction: column;
     padding: 0;
   }
-  /* line 169, ../sass/footer.scss */
+  /* line 172, ../sass/footer.scss */
   footer .sitemap {
     width: 100%;
     padding: 1.5rem 0;
   }
-  /* line 172, ../sass/footer.scss */
+  /* line 175, ../sass/footer.scss */
   footer .sitemap > h2 {
     font-size: 1.5em;
     text-align: center;
   }
-  /* line 176, ../sass/footer.scss */
+  /* line 179, ../sass/footer.scss */
   footer .sitemap ul {
     display: flex;
     flex-direction: row;
@@ -246,48 +249,48 @@ footer .social-container .social-icons .social-button i {
     width: 100%;
     padding: 1rem 0;
   }
-  /* line 184, ../sass/footer.scss */
+  /* line 187, ../sass/footer.scss */
   footer .sitemap ul li {
     font-size: 1rem;
     border: none;
   }
-  /* line 187, ../sass/footer.scss */
+  /* line 190, ../sass/footer.scss */
   footer .sitemap ul li:nth-child(1) {
     margin: 0;
   }
-  /* line 190, ../sass/footer.scss */
+  /* line 193, ../sass/footer.scss */
   footer .sitemap ul li a {
     color: #c5c5c5;
     padding: 0;
   }
-  /* line 193, ../sass/footer.scss */
+  /* line 196, ../sass/footer.scss */
   footer .sitemap ul li a:hover {
     margin: 0;
   }
-  /* line 200, ../sass/footer.scss */
+  /* line 203, ../sass/footer.scss */
   footer .social-container {
     width: 100%;
   }
-  /* line 202, ../sass/footer.scss */
+  /* line 205, ../sass/footer.scss */
   footer .social-container > h2 {
     text-align: center;
     font-size: 1.5em;
   }
-  /* line 206, ../sass/footer.scss */
+  /* line 209, ../sass/footer.scss */
   footer .social-container .social-icons {
     text-align: center;
   }
-  /* line 208, ../sass/footer.scss */
+  /* line 211, ../sass/footer.scss */
   footer .social-container .social-icons .social-button {
     height: 40px;
     width: 40px;
   }
-  /* line 211, ../sass/footer.scss */
+  /* line 214, ../sass/footer.scss */
   footer .social-container .social-icons .social-button i {
     line-height: 40px;
   }
 }
-/* line 220, ../sass/footer.scss */
+/* line 223, ../sass/footer.scss */
 section#feedback div {
   overflow: hidden;
 }

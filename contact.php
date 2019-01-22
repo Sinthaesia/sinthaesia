@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
 
   if(empty($error)){
 
-  $bericht = "Following person, <br><br> $naam $voornaam, provided phone number; $phone, has sent you the message... <br><br> <b>Message:</b> <br> $message <br><br> You can contact this person by using the email: $email";
+  $bericht = "Following person, <br><br> $name, from $company, provided phone number; $phone, and said.. <br> <b>Message:</b> <br> $message <br><br> You can contact this person by using the email: $email";
   $ontvanger = "Sinthaesia@gmail.com"; //Geef hier het e-mailadres van de ontvanger op.
   $onderwerp = "Sinthaesia.com - Contact form";
   $headers = "From: info@sinthaesia.com" . "\r\n"; //Geef hier je eigen e-mailadres op dat waaruit de mail verzonden moet worden.
@@ -102,12 +102,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
   <header id="desktop-icons">
     <nav id="icons">
       <ul>
-      <div class="logo">
+      <a class="logo">
         <h1><i class="fas fa-users"></i> Sinthaesia</h1>
         <p>Webdesign & development — Graphics</p>
-      </div>
+      </a>
         <li>
-          <a href="index">
+          <a href="index.html">
             <div class="icon">
               <i class="fas fa-home"></i>
               <i class="fas fa-home"></i>
@@ -116,16 +116,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
           </a>
         </li>
         <li>
-          <a href="#">
-            <div class="icon">
-              <i class="fas fa-newspaper"></i>
-              <i class="fas fa-newspaper"></i>
-            </div>
-            <div class="name"><span data-text="Portfolio">Portfolio</span></div>
-          </a>
-        </li>
-        <li>
-          <a href="contact">
+          <a href="contact.php">
             <div class="icon">
               <i class="fas fa-smile-wink"></i>
               <i class="fas fa-smile-wink"></i>
@@ -134,7 +125,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="affiliates.html">
             <div class="icon">
               <i class="fas fa-handshake"></i>
               <i class="fas fa-handshake"></i>
@@ -156,13 +147,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="fas fa-newspaper"></i>
-            <h1>Portfolio</h1>
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
+          <a href="contact.php">
             <i class="fas fa-smile-wink"></i>
             <h1>Contact</h1>
           </a>
@@ -220,28 +205,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Ik controleer of er iets verzonden 
     </div>
   </div>
 </div>
-
-
   <footer>
     <div class="sitemap">
       <h2>Quick navigation</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
         <li><a href="affiliates.html">Affiliates</a></li>
       </ul>
     </div>
     <div class="social-container">
       <h2>Follow us on social networks!</h2>
       <div class="social-icons">
-        <a class="social-button" href="#">
+        <a class="social-button" href="https://www.facebook.com/Sinthaesia-779240535788351">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a class="social-button" href="#">
           <i class="fab fa-twitter"></i>
         </a>
-        <a class="social-button" href="#">
+        <a class="social-button" href="https://codepen.io/tranquillia/#">
           <i class="fab fa-codepen"></i>
         </a>
         <a class="social-button" href="https://github.com/Tranquillia">

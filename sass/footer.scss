@@ -15,6 +15,9 @@ footer{
   background: linear-gradient(-45deg, $queenblue, $spaceblue);
   .sitemap{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     & > h2{
       font-size: 2em;
       color: $lightblue;
@@ -50,7 +53,7 @@ footer{
     justify-content: space-between;
     & > h2{
       text-align: right;
-      font-size: 2em;
+      font-size: 1.5em;
       color: $lightblue;
     }
     .social-icons{
@@ -60,11 +63,11 @@ footer{
         display: inline-block;
         height: 90px;
         width: 90px;
-        background: $offnickel;
+        background: darken($txtnickel, 7);
         margin: 1rem;
         border-radius: 30%;
         box-shadow: 0 5px 15px -5px #00000070;
-        color: $txtnickel;
+        color: $offnickel;
         overflow: hidden;
         position: relative;
         &::before{

@@ -34,13 +34,15 @@ body {
 
 /* line 7, ../sass/affiliates.scss */
 .container_affilliates {
-  height: 1500px;
+  height: calc(100% + 100px);
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 13, ../sass/affiliates.scss */
+/* line 15, ../sass/affiliates.scss */
 .container_affilliates .profile-card {
   width: 400px;
   height: 500px;
@@ -48,22 +50,23 @@ body {
   overflow: hidden;
   position: relative;
   background: #457b9d;
-  color: #500b07;
+  color: #b3b3b3;
   transition: all 0.3s cubic-bezier(0.61, -0.36, 1, 1);
+  margin: 1rem 0;
 }
-/* line 22, ../sass/affiliates.scss */
+/* line 25, ../sass/affiliates.scss */
 .container_affilliates .profile-card:hover {
   box-shadow: 0 7px 15px -8px black;
   transform: scale(1.02);
 }
-/* line 26, ../sass/affiliates.scss */
+/* line 29, ../sass/affiliates.scss */
 .container_affilliates .profile-card .card-header {
   width: 100%;
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-/* line 31, ../sass/affiliates.scss */
+/* line 34, ../sass/affiliates.scss */
 .container_affilliates .profile-card .card-header::before {
   content: '';
   position: absolute;
@@ -71,13 +74,13 @@ body {
   border-left: 400px solid #457b9d;
   bottom: 0;
 }
-/* line 38, ../sass/affiliates.scss */
+/* line 41, ../sass/affiliates.scss */
 .container_affilliates .profile-card .card-header img {
   width: 100%;
   height: 200px;
 }
 
-/* line 45, ../sass/affiliates.scss */
+/* line 48, ../sass/affiliates.scss */
 .card-content {
   padding: 10px;
   overflow: hidden;
@@ -88,13 +91,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-/* line 54, ../sass/affiliates.scss */
+/* line 57, ../sass/affiliates.scss */
 .card-content h2 {
-  color: #1d3557;
+  color: #c5c5c5;
   font-size: 2rem;
-  margin: 0 5px 0 0;
 }
-/* line 59, ../sass/affiliates.scss */
+/* line 61, ../sass/affiliates.scss */
+.card-content p {
+  font-size: 1rem;
+}
+/* line 64, ../sass/affiliates.scss */
 .card-content ul {
   margin: 0;
   padding: 0;
@@ -103,12 +109,12 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-/* line 66, ../sass/affiliates.scss */
+/* line 71, ../sass/affiliates.scss */
 .card-content ul li {
   list-style: none;
   display: inline-block;
 }
-/* line 69, ../sass/affiliates.scss */
+/* line 74, ../sass/affiliates.scss */
 .card-content ul li a {
   background: #1d3557;
   font-size: 2rem;
@@ -120,13 +126,13 @@ body {
   color: #457b9d;
   transition: all .3s ease-in-out;
 }
-/* line 79, ../sass/affiliates.scss */
+/* line 84, ../sass/affiliates.scss */
 .card-content ul li a:hover {
   transform: scale(1.2);
   font-weight: 400;
 }
 
-/* line 87, ../sass/affiliates.scss */
+/* line 92, ../sass/affiliates.scss */
 .card-footer {
   width: 100%;
   height: 100px;
@@ -134,7 +140,7 @@ body {
   position: relative;
   box-sizing: content-box;
 }
-/* line 93, ../sass/affiliates.scss */
+/* line 98, ../sass/affiliates.scss */
 .card-footer::before {
   content: '';
   position: absolute;
@@ -142,18 +148,18 @@ body {
   border-right: 400px solid #457b9d;
   top: 0;
 }
-/* line 100, ../sass/affiliates.scss */
+/* line 105, ../sass/affiliates.scss */
 .card-footer p {
   margin: 0;
   padding: 2rem;
   display: block;
-  color: #457b9d;
+  color: #c5c5c5;
   font-weight: bold;
 }
 
-/* line 108, ../sass/affiliates.scss */
+/* line 113, ../sass/affiliates.scss */
 .red {
-  color: #500b07;
+  color: #d7d7d7;
   font-weight: 400;
 }
 
@@ -164,3 +170,12 @@ body {
   card-content: 143px
   footer: 157px
 */
+@media only screen and (min-width: 820px) {
+  /* line 127, ../sass/affiliates.scss */
+  .container_affilliates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 0;
+  }
+}

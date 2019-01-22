@@ -72,7 +72,7 @@ $bordergray: rgba(35,35,35,1);
 @mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
   width: 100%;
   // position: relative;
-  background: linear-gradient(to right, darken($nickel, 10) 0%, darken($offnickel, 10) 100%);
+  background: linear-gradient(to right, darken($txtnickel, 10) 0%, darken($txtnickel, 20) 100%);
   // margin: 150px 0;
   &::before,
   &::after{

@@ -10,64 +10,85 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
   <meta name="author" content="Sinthaesia">
-  <title>Affiliates</title>
+  <title>Sinthaesia - Affiliates</title>
   <link rel="stylesheet" type="text/css" title="main-style" href="stylesheets/screen.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/navigation.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/navigation_test.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/cards.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/affiliates.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/hamburger.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="icon" href="images/atom.png" type="image/x-icon"/>
   <link rel="shortcut icon" href="images/atom.png" type="image/x-icon"/>
 </head>
 <body>
-  <nav id="icons">
-    <ul>
-    <div class="logo">
-      <h1><i class="fas fa-users"></i> Sinthaesia</h1>
-      <p>Webdesign & development — Graphics</p>
-    </div>
-      <li>
-        <a href="index">
-          <div class="icon">
+  <header id="desktop-icons">
+    <nav id="icons">
+      <ul>
+      <a href="index.html" class="logo">
+        <h1><i class="fas fa-users"></i> Sinthaesia</h1>
+        <p>Webdesign & development — Graphics</p>
+      </a>
+        <li>
+          <a href="index.html">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="name"><span data-text="Home">Home</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="contact.php">
+            <div class="icon">
+              <i class="fas fa-smile-wink"></i>
+              <i class="fas fa-smile-wink"></i>
+            </div>
+            <div class="name"><span data-text="Contact">Contact</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="affiliates.html">
+            <div class="icon">
+              <i class="fas fa-handshake"></i>
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="name"><span data-text="Affiliates">Affiliates</span></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header id="icon-header">
+    <a class="logo" href="index.html"><i class="fas fa-users"></i> Sinthaesia</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
             <i class="fas fa-home"></i>
-            <i class="fas fa-home"></i>
-          </div>
-          <div class="name"><span data-text="Home">Home</span></div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
-            <i class="fas fa-newspaper"></i>
-            <i class="fas fa-newspaper"></i>
-          </div>
-          <div class="name"><span data-text="Portfolio">Portfolio</span></div>
-        </a>
-      </li>
-      <li>
-        <a href="contact">
-          <div class="icon">
+            <h1>Home</h1>
+          </a>
+        </li>
+        <li>
+          <a href="contact.php">
             <i class="fas fa-smile-wink"></i>
-            <i class="fas fa-smile-wink"></i>
-          </div>
-          <div class="name"><span data-text="Contact">Contact</span></div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="icon">
+            <h1>Contact</h1>
+          </a>
+        </li>
+        <li>
+          <a href="affiliates.html">
             <i class="fas fa-handshake"></i>
-            <i class="fas fa-handshake"></i>
-          </div>
-          <div class="name"><span data-text="Affiliates">Affiliates</span></div>
-        </a>
-      </li>
-    </ul>
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
+            <h1>Affiliates</h1>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="hamburger hamburger--emphatic" tabindex="0" aria-controls="nav" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </header>
   <container class="affiliates-wrapper">
     <section class="container_affilliates">
       <div class="profile-card">
@@ -76,12 +97,30 @@
         </div>
         <div class="card-content">
           <h2>Sinthaesia</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Webdesign & -development, business card creation.</p>
           <ul>
-            <li><a class="fab fa-facebook-f" href="#"></a></li>
+            <li><a class="fab fa-facebook-f" href="https://www.facebook.com/Sinthaesia-779240535788351"></a></li>
             <li><a class="fab fa-twitter" href="#"></a></li>
-            <li><a class="fab fa-codepen" href="#"></a></li>
-            <li><a class="fab fa-github" href="#"></a></li>
+            <li><a class="fab fa-codepen" href="https://codepen.io/tranquillia/#"></a></li>
+            <li><a class="fab fa-github" href="https://github.com/Tranquillia"></a></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p>Coded by <span class="red">Sinthaesia</span></p>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="card-header">
+          <img src="images/gvh.jpg" alt="">
+        </div>
+        <div class="card-content">
+          <h2>Glenn van Haute</h2>
+          <p>Full-stack developer</p>
+          <ul>
+            <li><a class="fab fa-facebook-f" href="https://www.facebook.com/Sinthaesia-779240535788351"></a></li>
+            <li><a class="fab fa-twitter" href="#"></a></li>
+            <li><a class="fab fa-codepen" href="https://codepen.io/tranquillia/#"></a></li>
+            <li><a class="fab fa-github" href="https://github.com/Tranquillia"></a></li>
           </ul>
         </div>
         <div class="card-footer">
@@ -95,21 +134,20 @@
       <h2>Quick navigation</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
         <li><a href="affiliates.html">Affiliates</a></li>
       </ul>
     </div>
     <div class="social-container">
       <h2>Follow us on social networks!</h2>
       <div class="social-icons">
-        <a class="social-button" href="#">
+        <a class="social-button" href="https://www.facebook.com/Sinthaesia-779240535788351">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a class="social-button" href="#">
           <i class="fab fa-twitter"></i>
         </a>
-        <a class="social-button" href="#">
+        <a class="social-button" href="https://codepen.io/tranquillia/#">
           <i class="fab fa-codepen"></i>
         </a>
         <a class="social-button" href="https://github.com/Tranquillia">
