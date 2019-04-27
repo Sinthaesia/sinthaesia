@@ -152,7 +152,7 @@ header#desktop-icons ul li a .icon .fas:nth-last-child(1) {
 header#desktop-icons ul li a:hover .icon .fas {
   transform: translateY(-100%);
 }
-/* line 118, ../sass/navigation_test.scss */
+/* line 117, ../sass/navigation_test.scss */
 header#desktop-icons .logo {
   position: absolute;
   left: 2rem;
@@ -164,28 +164,28 @@ header#desktop-icons .logo {
   -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
   transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
 }
-/* line 128, ../sass/navigation_test.scss */
+/* line 127, ../sass/navigation_test.scss */
 header#desktop-icons .logo:hover {
   color: #c5c5c5;
 }
-/* line 131, ../sass/navigation_test.scss */
+/* line 130, ../sass/navigation_test.scss */
 header#desktop-icons .logo h1 {
   font-size: 2rem;
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 137, ../sass/navigation_test.scss */
+  /* line 136, ../sass/navigation_test.scss */
   header#icon-header {
     display: none;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 140, ../sass/navigation_test.scss */
+  /* line 139, ../sass/navigation_test.scss */
   header#desktop-icons {
     display: none;
   }
 
-  /* line 143, ../sass/navigation_test.scss */
+  /* line 142, ../sass/navigation_test.scss */
   header#icon-header {
     position: fixed;
     top: 0;
@@ -200,7 +200,7 @@ header#desktop-icons .logo h1 {
     height: 65px;
     z-index: 500;
   }
-  /* line 156, ../sass/navigation_test.scss */
+  /* line 155, ../sass/navigation_test.scss */
   header#icon-header .logo {
     color: #c5c5c5;
     height: 65px;
@@ -215,11 +215,11 @@ header#desktop-icons .logo h1 {
     -o-transition: all .3 ease;
     -moz-transition: all .3s ease;
   }
-  /* line 169, ../sass/navigation_test.scss */
+  /* line 168, ../sass/navigation_test.scss */
   header#icon-header .logo:hover {
     color: #c5c5c5;
   }
-  /* line 173, ../sass/navigation_test.scss */
+  /* line 172, ../sass/navigation_test.scss */
   header#icon-header nav {
     /* use display none or left:-100% to hide the nav  */
     /* display: none; */
@@ -232,7 +232,7 @@ header#desktop-icons .logo h1 {
     background: linear-gradient(-135deg, #1d3557, #457b9d);
     overflow-y: hidden;
   }
-  /* line 185, ../sass/navigation_test.scss */
+  /* line 184, ../sass/navigation_test.scss */
   header#icon-header nav ul {
     margin: 0;
     padding: 0;
@@ -242,16 +242,16 @@ header#desktop-icons .logo h1 {
     flex-direction: column;
     height: 100%;
   }
-  /* line 193, ../sass/navigation_test.scss */
+  /* line 192, ../sass/navigation_test.scss */
   header#icon-header nav ul li {
     list-style: none;
     position: relative;
   }
-  /* line 196, ../sass/navigation_test.scss */
+  /* line 195, ../sass/navigation_test.scss */
   header#icon-header nav ul li i {
     font-size: 2rem;
   }
-  /* line 199, ../sass/navigation_test.scss */
+  /* line 198, ../sass/navigation_test.scss */
   header#icon-header nav ul li a {
     color: #c5c5c5;
     font-size: 1.25rem;
@@ -260,17 +260,17 @@ header#desktop-icons .logo h1 {
     height: 100%;
     width: 100%;
   }
-  /* line 206, ../sass/navigation_test.scss */
+  /* line 205, ../sass/navigation_test.scss */
   header#icon-header nav ul li a h1 {
     width: 100%;
   }
-  /* line 209, ../sass/navigation_test.scss */
+  /* line 208, ../sass/navigation_test.scss */
   header#icon-header nav ul li a:hover {
     opacity: 1;
     font-weight: 400;
   }
 
-  /* line 218, ../sass/navigation_test.scss */
+  /* line 217, ../sass/navigation_test.scss */
   header nav ul li ul {
     position: absolute;
     left: 0;
@@ -278,19 +278,19 @@ header#desktop-icons .logo h1 {
     display: none;
   }
 
-  /* line 224, ../sass/navigation_test.scss */
+  /* line 223, ../sass/navigation_test.scss */
   header nav ul li.active ul {
     /* use li: hover instead */
     display: block;
   }
 
-  /* line 228, ../sass/navigation_test.scss */
+  /* line 227, ../sass/navigation_test.scss */
   header nav ul li ul li {
     display: block;
     width: 200px;
   }
 
-  /* line 232, ../sass/navigation_test.scss */
+  /* line 231, ../sass/navigation_test.scss */
   header nav ul li a {
     height: 50px;
     line-height: 50px;
@@ -300,24 +300,24 @@ header#desktop-icons .logo h1 {
     display: block;
   }
 
-  /* line 240, ../sass/navigation_test.scss */
+  /* line 239, ../sass/navigation_test.scss */
   header nav ul li a:hover {
     color: #fff;
     background: rgba(0, 0, 0, 0.65);
   }
 
-  /* line 244, ../sass/navigation_test.scss */
+  /* line 243, ../sass/navigation_test.scss */
   header nav ul li a.active {
     background: rgba(0, 0, 0, 0.65);
   }
 }
-/* line 259, ../sass/navigation_test.scss */
+/* line 258, ../sass/navigation_test.scss */
 .something {
   display: block;
   position: relative;
 }
 
-/* line 264, ../sass/navigation_test.scss */
+/* line 263, ../sass/navigation_test.scss */
 .test-content {
   height: 1500px;
   width: 100%;
@@ -325,7 +325,7 @@ header#desktop-icons .logo h1 {
   padding-top: 65px;
 }
 
-/* line 270, ../sass/navigation_test.scss */
+/* line 269, ../sass/navigation_test.scss */
 .is__active {
   width: 100vw;
   animation: navigation 350ms ease;
@@ -340,7 +340,7 @@ header#desktop-icons .logo h1 {
     width: 100vw;
   }
 }
-/* line 280, ../sass/navigation_test.scss */
+/* line 279, ../sass/navigation_test.scss */
 .is__closed {
   width: 0vw !important;
   animation: closenav 350ms ease;

@@ -3,8 +3,10 @@ $('#image-container').scroll(function() {
     $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
 });
 
+var navheight = $("header").height();
+
 $("#button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#announcement").offset().top
+        scrollTop: $("#announcement").offset().top + navheight
     }, 1500);
 });

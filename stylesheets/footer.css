@@ -290,7 +290,3 @@ footer .social-container .social-icons .social-button i {
     line-height: 40px;
   }
 }
-/* line 223, ../sass/footer.scss */
-section#feedback div {
-  overflow: hidden;
-}
